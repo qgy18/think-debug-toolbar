@@ -1,0 +1,37 @@
+{
+	"name": "think-debug-toolbar",
+	"description": "A development tool for ThinkJS 2.0, it's simple middleware that injects useful debugging output into your html.",
+	"version": "1.0.0",
+	"author": {
+		"name": "Jerry Qu",
+		"email": "quguangyu@gmail.com"
+	},
+	"scripts": {
+
+	},
+	"contributors": [{
+		"name": "Jerry Qu",
+		"email": "quguangyu@gmail.com"
+	}],
+	"main": "lib/index.js",
+	"dependencies": {
+	    "jade": "0.29.0",
+	    "xtend": "2.0.3"
+	},
+	"keywords": [
+		"thinkjs",
+		"debugger"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qgy18/think-debug-toolbar"
+	},
+	"engines": {
+		"node": ">=0.12.0"
+	},
+	"license": "MIT",
+	"readmeFilename": "README.md",
+	"bugs": {
+		"url": "https://github.com/qgy18/think-debug-toolbar/issues"
+	}
+}

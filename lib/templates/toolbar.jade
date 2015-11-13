@@ -1,0 +1,23 @@
+div <div class="express-debug" id="express-debug" !{extra_attrs} />
+	include ../assets/style.css
+	a(id="TDT-show", href="javascript:void(0);", title="Open express-debug toolbar") TDT
+	#TDT
+		- var tmp_p = ''
+		div#TDT-menu
+			span.text thinkjs-debug-toolbar
+			div.sep
+			span.text #{req.method} #{req.path}
+			ul
+				- panels.forEach(function(panel){
+					div.sep
+					li: a(href='#TDT-' + panel.name, title=panel.name + ' panel')= panel.name
+				- })
+			a(id="TDT-close", title="close express-debug toolbar", href="javascript:void(0);") CLOSE
+		#TDT-main
+			- edt_first = ' active'
+				- panels.forEach(function(panel){
+					div(class='tab' + edt_first, id='TDT-' + panel.name)!= panel.html
+					- if (edt_first) edt_first = ''
+				- })
+
+	include ../assets/js.js
