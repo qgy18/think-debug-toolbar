@@ -68,6 +68,7 @@
 	padding: 20px;
 	width: 100%;
 	min-height: 100%;
+	border-bottom:1px solid #ddd;
 }
 
 #TDT .tab { display: none; }
@@ -124,26 +125,7 @@
 
 #TDT h4 span { padding-left: 20px; font-weight: normal; font-size: 14px; }
 
-#TDT .edt-nav li {
-	display: block;
-	list-style: none;
-	padding: 5px;
-}
-#TDT .edt-nav a {
-	text-decoration: none;
-	font-size: 16px;
-	line-height: 26px;
-}
-
-#TDT .edt-nav a:hover {
-	text-decoration: underline;
-}
-
-#TDT .profile th:nth-child(1) { width: 10%; min-width: 130px}
-#TDT .profile th:nth-child(2) { width: 18%; min-width: 100px}
-#TDT .profile th:nth-child(4) { width: 10%; min-width: 100px}
-
-#TDT table.profile, #TDT table.object {
+#TDT table.object {
 	border: 1px solid #DDD;
 	width: 100%;
 	border-collapse: collapse;
@@ -152,12 +134,9 @@
 #TDT table.object { table-layout:fixed; }
 
 #TDT th { font-weight: bold; }
-#TDT .object tbody tr:nth-child(2n+1), #TDT table.profile tbody tr:nth-child(2n+1) { background-color: rgba(0, 0, 0, 0.03); }
+#TDT .object tbody>tr:nth-child(2n+1){ background-color: rgba(0, 0, 0, 0.03); }
 
-#TDT .object th,
-#TDT .profile th,
-#TDT .object td,
-#TDT .profile td { padding: 8px; word-wrap: break-word; color: #000; text-align: left; }
+#TDT .object th, #TDT .object td { padding: 8px; word-wrap: break-word; color: #000; text-align: left; }
 
 #TDT .object th:first-child { min-width: 126px; width: 15%; }
 #TDT .object th.arr:first-child { width: 60px; min-width: 60px; }
