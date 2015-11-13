@@ -1,7 +1,7 @@
 /* core styling */
-.express-debug { position: static !important; }
+.think-debug-toolbar { position: static !important; }
 
-.express-debug * {
+.think-debug-toolbar * {
 	font-size: inherit;
 	font-style: inherit;
 	font-weight: inherit;
@@ -13,7 +13,7 @@
 	padding: 0;
 	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
 }
-.express-debug a { cursor: pointer !important; }
+.think-debug-toolbar a { cursor: pointer !important; }
 
 /* SHOW/HIDE buttons */
 #TDT-show {

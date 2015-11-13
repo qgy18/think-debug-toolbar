@@ -1,10 +1,10 @@
-div <div class="express-debug" id="express-debug" !{extra_attrs} />
+div <div class="think-debug-toolbar" id="think-debug-toolbar" !{extra_attrs} />
 	include ../assets/style.css
-	a(id="TDT-show", href="javascript:void(0);", title="Open express-debug toolbar") TDT
+	a(id="TDT-show", href="javascript:void(0);", title="Open think-debug-toolbar") TDT
 	#TDT
 		- var tmp_p = ''
 		div#TDT-menu
-			span.text thinkjs-debug-toolbar
+			span.text think-debug-toolbar
 			div.sep
 			span.text #{req.method} #{req.path}
 			ul
@@ -12,7 +12,7 @@ div <div class="express-debug" id="express-debug" !{extra_attrs} />
 					div.sep
 					li: a(href='#TDT-' + panel.name, title=panel.name + ' panel')= panel.name
 				- })
-			a(id="TDT-close", title="close express-debug toolbar", href="javascript:void(0);") CLOSE
+			a(id="TDT-close", title="close think-debug-toolbar toolbar", href="javascript:void(0);") CLOSE
 		#TDT-main
 			- edt_first = ' active'
 				- panels.forEach(function(panel){
