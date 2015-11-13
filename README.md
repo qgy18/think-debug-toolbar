@@ -22,7 +22,7 @@ npm install think-debug-toolbar --save
 
 ## 使用
 
-### 注册 MiddleWare
+### 注册 middleware
 
 打开这个文件：`src/common/bootstrap/middleware.js`（如果不存在则新建），写入以下代码：
 
@@ -63,6 +63,8 @@ export default {
 ```
 
 如果你的 `hook.js` 有其他配置，请自行调整，不要直接覆盖。
+
+如果一切正常，刷新页面后，应该会出现一个浮层按钮，点击按钮就可以查看丰富的调试信息了。
 
 ### 注意事项
 

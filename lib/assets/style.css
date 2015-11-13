@@ -32,29 +32,32 @@
 	cursor: pointer;
 	color: #444;
 }
-#TDT-show:hover, #TDT-show:focus { color: #af2b2b; outline: none }
 
+#TDT-show:hover, #TDT-show:focus { outline: none }
+
+#TDT #TDT-collapse {
+	display: block;
+	float: right;
+	border-left: 1px solid #666;
+	width:102px;
+}
 
 #TDT #TDT-close {
-	font-weight: bold;
 	display: block;
 	float: right;
 	margin-right: 20px;
-	border-left: 1px solid #717171;
-	border-right: 1px solid #717171;
 }
 
 /* main layout */
 #TDT {
 	display: none;
 	font-size: 14px;
-
-	z-index: 1000;
+	z-index: 99999;
 	position: absolute;
+	min-height: 36px;
 	top: 0;
 	right: 0;
 	left: 0;
-	bottom: 0;
 }
 
 #TDT td, #TDT th { vertical-align: top; }
@@ -62,16 +65,15 @@
 #TDT #TDT-main {
 	background-color: rgba(255, 255, 255, 0.95);
 	margin-top: 34px;
-	padding: 20px 20px 20px 20px;
+	padding: 20px;
 	width: 100%;
 	min-height: 100%;
 }
 
-
 #TDT .tab { display: none; }
 #TDT .tab.active { display: block; }
 
-#TDT h2, #TDT h4, #TDT-menu { font-size: 18px }
+#TDT h2, #TDT h4, #TDT-menu { font-size: 16px }
 #TDT h2 { font-weight: bold; color: #CCC; margin-bottom: 14px; }
 #TDT h4 {
 	display: inline-block;
@@ -86,17 +88,18 @@
 	text-align: center;
 	position: fixed;
 	top: 0;
-
-	background-color: rgba(33, 33, 33, 0.95);
-	color: #CCC;
-	line-height: 32px;
-	border-bottom: 1px solid rgba(132, 132, 132, 0.93);
-	outline: 1px solid rgba(33, 33, 33, 0.95);
+	background-color: #444;
+	color: #ccc;
+	padding: 0 10px;
 }
 
 #TDT-menu span.text, #TDT-menu a {
 	display: inline-block;
-	padding: 0 10px 0 10px;
+    padding: 0 15px;
+    border-right: 1px solid #666;
+    height: 36px;
+    line-height: 36px;
+    color: #aaa;
 }
 
 #TDT-menu div.sep {
@@ -110,17 +113,13 @@
 #TDT-menu ul, #TDT-menu li, #TDT-menu a {
 	display: inline-block;
 	list-style: none;
-	color: #df3333;
 	text-decoration: none;
 }
 
-#TDT-menu a:hover, #TDT-menu a:focus, #TDT-menu a.active {
-	color: #ff2f2f;
-	background-color: rgba(255, 255, 255, 0.15);
+#TDT-menu a:hover, #TDT-menu a.active {
+    background: #202328;
+    color: #fff;
 	outline: none;
-}
-#TDT-menu a:hover, #TDT-menu a:focus {
-	text-decoration: underline;
 }
 
 #TDT h4 span { padding-left: 20px; font-weight: normal; font-size: 14px; }
