@@ -1,4 +1,4 @@
-# think-ip-filter
+# think-debug-toolbar
 
 为使用 [ThinkJS 2.0](https://thinkjs.org) 开发的项目增加一个调试界面，可以在开发环境下快速查看以下信息：
 
