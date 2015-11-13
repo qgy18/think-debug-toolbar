@@ -1,6 +1,6 @@
 # think-debug-toolbar
 
-为使用 [ThinkJS 2.0](https://thinkjs.org) 开发的项目增加一个调试界面，可以在开发环境下快速查看以下信息：
+为使用 [ThinkJS 2.0](https://thinkjs.org) 开发的项目增加一个调试工具条，可以在开发环境下快速查看以下信息：
 
 * HTTP 请求；
 * HTTP 响应；
@@ -12,7 +12,7 @@
 
 本插件在 [devoidfury/express-debug](https://github.com/devoidfury/express-debug) 基础上开发，为 ThinkJS 做了大量调整，仅适用于 ThinkJS 2.0。
 
-这里有两张截图：[截图一](http://i.imgur.com/kHKUFMf.png)、[截图二](http://i.imgur.com/zYZqNKC.png)。
+这里有两张截图：[截图一](http://i.imgur.com/kHKUFMf.png)、[截图二](http://i.imgur.com/PZRxKEe.png)。
 
 ## 安装
 
@@ -62,9 +62,11 @@ export default {
 }
 ```
 
+如果你的 `hook.js` 有其他配置，请自行调整，不要直接覆盖。
+
 ### 注意事项
 
-本工具只会在开发环境启用。需要注意的是：**一定不要在线上启用开发模式**。
+本工具只会在开发环境启用（通过判断 `think.env` 是否等于 `development` 来决定是否启用）。需要注意的是：**一定不要在线上启用开发模式**。
 
 ## LICENSE
 
