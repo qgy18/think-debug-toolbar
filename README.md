@@ -12,7 +12,7 @@
 
 本插件在 [devoidfury/express-debug](https://github.com/devoidfury/express-debug) 基础上开发，为 ThinkJS 做了大量调整，仅适用于 ThinkJS 2.0。
 
-这里有两张截图：[截图一](http://i.imgur.com/kHKUFMf.png)、[截图二](http://i.imgur.com/kV5OC1S.png)。
+这里有两张截图：[截图一](http://p8.qhimg.com/t0195801020d4ecb490.png)、[截图二](http://p0.qhimg.com/t01fd4ffae28583bb7d.png)。
 
 ## 安装
 
