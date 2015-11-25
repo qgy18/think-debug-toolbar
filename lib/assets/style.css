@@ -141,7 +141,7 @@
 #TDT .object th:first-child { min-width: 126px; width: 15%; }
 #TDT .object th.arr:first-child { width: 60px; min-width: 60px; }
 
-#TDT .object .collapse, #TDT .object .expand { cursor: pointer; }
+#TDT .object .collapse, #TDT .object .expand { display:table-row; cursor: pointer; }
 #TDT .object .indicator { text-align: right; font-size: 16px; color: #000; }
 #TDT .collapse .indicator:after { content: '(-)'; }
 #TDT .expand .indicator:after { content: '(+)'; }
