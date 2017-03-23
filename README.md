@@ -57,8 +57,10 @@ think.middleware('debug_toolbar', debugToolbar(conf));
 ```js
 'use strict';
 
+import debugToolbar from 'think-debug-toolbar';
+
 export default {
-	view_filter : ['append', 'debug_toolbar'],
+	view_filter : ['append', debugToolbar({})],
 }
 ```
 
