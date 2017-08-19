@@ -1,7 +1,7 @@
 {
 	"name": "think-debug-toolbar",
 	"description": "A development tool for ThinkJS 2.0, it's simple middleware that injects useful debugging output into your html.",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"author": {
 		"name": "Jerry Qu",
 		"email": "quguangyu@gmail.com"
